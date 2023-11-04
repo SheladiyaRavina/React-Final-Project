@@ -1,0 +1,384 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "admin": [
+    {
+      "name": "ravina   sheladiya",
+      "email": "ravinasheladiya810@gmail.com",
+      "password": "810810",
+      "cpassword": "810810",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "name": "ravina",
+      "email": "ravina@gmail.com",
+      "password": "121212",
+      "cpasswod": "121212",
+      "id": 1
+    },
+    {
+      "name": "bhumi",
+      "email": "bhumi@gmail.com",
+      "password": "121212",
+      "cpasswod": "121212",
+      "id": 2
+    },
+    {
+      "name": "gopi",
+      "email": "gopi@gmail.com",
+      "password": "121212",
+      "cpasswod": "121212",
+      "id": 3
+    },
+    {
+      "name": "dharmi",
+      "email": "dharmi@gmail.com",
+      "password": "121212",
+      "cpasswod": "121212",
+      "id": 4
+    }
+  ],
+  "Cart": [
+    {
+      "name": " Complications",
+      "price": "77950",
+      "qty": 1,
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638309838502972299_pate323671_4886354_98126_41-1.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Patek Philippe",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "name": "Grand Complications",
+      "price": "129950",
+      "qty": 1,
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320078545252638_pate306549_4886321_96669_41-37.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Patek Philippe",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "name": "Balancier",
+      "price": "169950",
+      "qty": 1,
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638164754859824794_grue300315_4813911_94712_45-7.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Greubel_Forsey",
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "name": "Grand Complications",
+      "price": "129950",
+      "qty": 1,
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320078545252638_pate306549_4886321_96669_41-37.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Patek Philippe",
+      "userId": 5,
+      "id": 6
+    },
+    {
+      "name": "Calatrava",
+      "price": "19950",
+      "qty": 1,
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638279625887194620_PATE319661_4822565_95214_CORRECTION-1.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Patek Philippe",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "name": "Calatrava",
+      "price": "19950",
+      "qty": 2,
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638279625887194620_PATE319661_4822565_95214_CORRECTION-1.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Patek Philippe",
+      "userId": 5,
+      "id": 9
+    },
+    {
+      "name": "Santos",
+      "price": "7950",
+      "qty": 2,
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638301359098120106_CART310223_4878898_97682_39_1.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Cartier",
+      "userId": 5,
+      "id": 10
+    },
+    {
+      "name": "Grand Complications",
+      "price": "119950",
+      "qty": 2,
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638270891895527410_84fa1711-6c10-41e3-b978-b20cba41dc4b.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Patek Philippe",
+      "userId": 2,
+      "id": 11
+    }
+  ],
+  "slider": [
+    {
+      "image": "https://sfcc-imgix-images.s3.amazonaws.com/2023.07.12-Game+Changers-Coming+Soon_plp.jpg?auto=compress,format&w=2560",
+      "id": 1
+    },
+    {
+      "image": "https://watchbox-sfcc.imgix.net/08-21-2023-PLP+Updates/2023.08.21-PLP+Updates_desktop-shop+all.jpg?auto=compress,format&w=2560",
+      "id": 2
+    },
+    {
+      "image": "https://watchbox-sfcc.imgix.net/plp/Patek+PLP.jpg?auto=compress,format&w=2560",
+      "id": 3
+    }
+  ],
+  "marketstatus": [
+    {
+      "marketstatus": "latest"
+    },
+    {
+      "marketstatus": "trending"
+    },
+    {
+      "marketstatus": "upcomming"
+    },
+    {
+      "marketstatus": "best"
+    }
+  ],
+  "brand": [
+    {
+      "brand_name": "Rolex",
+      "id": 2
+    },
+    {
+      "brand_name": "Cartier",
+      "id": 3
+    },
+    {
+      "brand_name": "Greubel_Forsey",
+      "id": 4
+    },
+    {
+      "brand_name": "Jaquet Droz",
+      "id": 5
+    },
+    {
+      "brand_name": "Patek Philippe",
+      "id": 6
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "Grand Complications",
+      "brand": "Patek Philippe",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638252971950586375_PATE323200_4792644_92915_37_1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "49950",
+      "status": "outstock",
+      "marketstatus": "latest",
+      "qty": 1
+    },
+    {
+      "id": 2,
+      "name": "Grand Complications",
+      "brand": "Patek Philippe",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638270891895527410_84fa1711-6c10-41e3-b978-b20cba41dc4b.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "119950",
+      "status": "instock",
+      "marketstatus": "latest",
+      "qty": 1
+    },
+    {
+      "id": 3,
+      "name": "Grand Complications",
+      "brand": "Patek Philippe",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320078545252638_pate306549_4886321_96669_41-37.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "129950",
+      "status": "instock",
+      "marketstatus": "trending",
+      "qty": 1
+    },
+    {
+      "id": 4,
+      "name": "Calatrava",
+      "brand": "Patek Philippe",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638279625887194620_PATE319661_4822565_95214_CORRECTION-1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "19950",
+      "status": "instock",
+      "marketstatus": "best",
+      "qty": 1
+    },
+    {
+      "id": 5,
+      "name": " Complications",
+      "brand": "Patek Philippe",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638309838502972299_pate323671_4886354_98126_41-1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "77950",
+      "status": "instock",
+      "marketstatus": "best",
+      "qty": 1
+    },
+    {
+      "id": 6,
+      "name": "GMT-Master II",
+      "brand": "Rolex",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638300488586919150_6646c305-6b51-4671-8141-aff4aeadabc4.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "39950",
+      "status": "instock",
+      "marketstatus": "trending",
+      "qty": 1
+    },
+    {
+      "id": 7,
+      "name": "GMT-Master II",
+      "brand": "Rolex",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638290136687967593_role363016_4853974_96640_40_1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "19950",
+      "status": "instock",
+      "marketstatus": "upcomming",
+      "qty": 1
+    },
+    {
+      "id": 8,
+      "name": "GMT-Master II",
+      "brand": "Rolex",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638314211283506549_0cb7402d-1d21-4b3b-9b5e-6c3255f0be87.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "39950",
+      "status": "outstock",
+      "marketstatus": "latest",
+      "qty": 1
+    },
+    {
+      "id": 9,
+      "name": "GMT-Master II",
+      "brand": "Rolex",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638319499219897009_ROLE322111_4843629_96167_40_1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "21950",
+      "status": "instock",
+      "marketstatus": "upcomming",
+      "qty": 1
+    },
+    {
+      "id": 10,
+      "name": "GMT-Master II",
+      "brand": "Rolex",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638300488586919150_6646c305-6b51-4671-8141-aff4aeadabc4.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "39950",
+      "status": "instock",
+      "marketstatus": "latest",
+      "qty": 1
+    },
+    {
+      "id": 11,
+      "name": "Santos",
+      "brand": "Cartier",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638301359098120106_CART310223_4878898_97682_39_1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "7950",
+      "status": "instock",
+      "marketstatus": "trending",
+      "qty": 1
+    },
+    {
+      "id": 12,
+      "name": "GMT-Master II",
+      "brand": "Cartier",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638327292233559950_CART308912_4884565_98013_40_1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "6950",
+      "status": "instock",
+      "marketstatus": "best",
+      "qty": 1
+    },
+    {
+      "id": 13,
+      "name": "GMT-Master II",
+      "brand": "Cartier",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638318513628106280_d390b44c-ddca-4b4b-a815-fb40bfb7a9ea.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "3950",
+      "status": "instock",
+      "marketstatus": "best",
+      "qty": 1
+    },
+    {
+      "id": 14,
+      "name": "GMT-Master II",
+      "brand": "Cartier",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638182976998041791_CART605087_4814893_94739_2d_0001.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "10450",
+      "status": "outstock",
+      "marketstatus": "upcomming",
+      "qty": 1
+    },
+    {
+      "id": 15,
+      "name": "Tortue",
+      "brand": "Cartier",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/637934773716854856_cart310074_4618765_83047_41_1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "40950",
+      "status": "instock",
+      "marketstatus": "latest",
+      "qty": 1
+    },
+    {
+      "id": 16,
+      "name": "Hand Made 1",
+      "brand": "Greubel_Forsey",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638097279139376176_grue100125_4784518_43-30.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "799950",
+      "status": "instock",
+      "marketstatus": "trending",
+      "qty": 1
+    },
+    {
+      "id": 17,
+      "name": "Tourbillon",
+      "brand": "Greubel_Forsey",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638186345665577511_GRUE300422_4725446_90245-1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "239950",
+      "status": "instock",
+      "marketstatus": "upcomming",
+      "qty": 1
+    },
+    {
+      "id": 18,
+      "name": "Balancier",
+      "brand": "Greubel_Forsey",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/637980527085575778_grue300448_4732129_90502_47-1.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "169950",
+      "status": "instock",
+      "marketstatus": "latest",
+      "qty": 1
+    },
+    {
+      "id": 19,
+      "name": "Balancier",
+      "brand": "Greubel_Forsey",
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638164754859824794_grue300315_4813911_94712_45-7.jpg?w=1134&h=1134&auto=compress,format",
+      "price": "169950",
+      "status": "instock",
+      "marketstatus": "best",
+      "qty": 1
+    },
+    {
+      "id": 20,
+      "name": "Balancier",
+      "brand": "Greubel_Forsey",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638254476402685329_grue300471_4772117_92116_39_CORRECTION-1.jpg?h=1400&w=1400&auto=compress,format",
+      "price": "179950",
+      "status": "outstock",
+      "marketstatus": "upcomming",
+      "qty": 1
+    }
+  ]
+}
