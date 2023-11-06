@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            <div className='footer p-5 'style={{ backgroundColor: "black" }}>
+            <div className='footer p-5 ' style={{ backgroundColor: "#02183f" }}>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-xl-3'>
@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='pb-4' style={{ backgroundColor: "black" }}>
+            <div className='pb-4' style={{ backgroundColor: "#02183f" }}>
                 <div className='container'>
                     <div className='col-xl-12 row'>
                         <div className='col-xl-6'>

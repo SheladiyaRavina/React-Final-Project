@@ -32,33 +32,33 @@ const Header = () => {
                                         (
                                             <>
                                                 <li className="nav-item">
-                                                    <NavLink to="/user/register" className="nav-link fw-bold me-2" aria-current="page">Register</NavLink>
+                                                    <NavLink to="/user/register" className="nav-link fw-bold me-2" style={{color:'#012970'}} aria-current="page">Register</NavLink>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <NavLink to="/user/login" className="nav-link fw-bold me-2" aria-current="page">Login</NavLink>
+                                                    <NavLink to="/user/login" className="nav-link fw-bold me-2" style={{color:'#012970'}} aria-current="page">Login</NavLink>
                                                 </li>
 
                                             </>
                                         ) : (
                                             <>
                                                 <li className="nav-item">
-                                                    <NavLink className="nav-link fw-bold me-2" onClick={() => logOut()} aria-current="page">Logout</NavLink>
+                                                    <NavLink className="nav-link fw-bold me-2" style={{color:'#012970'}} onClick={() => logOut()} aria-current="page">Logout</NavLink>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <NavLink to="/user/cart" className="nav-link fw-bold me-2" aria-current="page">Cart</NavLink>
+                                                    <NavLink to="/user/cart" style={{color:'#012970'}} className="nav-link fw-bold me-2" aria-current="page">Cart</NavLink>
                                                 </li>
                                             </>
                                         )
                                 }
                                 <li className="nav-item">
-                                    <NavLink to="/" className="nav-link fw-bold me-2" aria-current="page">Home</NavLink>
+                                    <NavLink to="/" className="nav-link fw-bold me-2" aria-current="page" style={{color:'#012970'}}>Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/user/product" className="nav-link fw-bold me-2" aria-current="page">Product</NavLink>
+                                    <NavLink to="/user/product" style={{color:'#012970'}} className="nav-link fw-bold me-2" aria-current="page">Product</NavLink>
                                 </li>
 
                                 <li className="nav-item">
-                                    <NavLink to="/user/home" className="nav-link fw-bold me-2" aria-current="page">Contact</NavLink>
+                                    <NavLink to="/user/home" style={{color:'#012970'}} className="nav-link fw-bold me-2" aria-current="page">Contact</NavLink>
                                 </li>
                             </ul>
                         </div>

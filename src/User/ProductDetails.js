@@ -59,7 +59,7 @@ const ProductDetails = () => {
     return (
         <center>
             <div className='container p-5'>
-                <h1 className='text-center mb-4'>Watch Details</h1>
+                <h1 className='text-center mb-4' style={{color:'#012970'}}>Watch Details</h1>
                 <div className='row'>
                     <div className="card mb-3 text-start">
                         <div className="row g-0 col-lg-12">
@@ -81,14 +81,14 @@ const ProductDetails = () => {
                                     <p className='m-0'> <span className='fw-bold'>Movement:</span> Automatic</p>
                                     <p><span className='fw-bold'>Complications:</span> Chronograph, Date, Day, Month, Moon Phase, Perpetual Calendar, Hours and Minutes, Seconds
                                     </p>
-                                    <button className='mt-3 btn w-25' style={{ backgroundColor: 'black', color: 'white' }} onClick={() => AddtoCart(productId)}>Add to cart</button>
+                                    <button className='mt-3 btn w-25' style={{ backgroundColor: '#012970', color: 'white' }} onClick={() => AddtoCart(productId)}>Add to cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <NavLink to="/user/product"><button className='btn mt-3' style={{ backgroundColor: 'black', color: 'white' }}>Continue Shopping</button></NavLink>
+                <NavLink to="/user/product"><button className='btn mt-3'>Continue Shopping</button></NavLink>
             </div>
         </center>
     )

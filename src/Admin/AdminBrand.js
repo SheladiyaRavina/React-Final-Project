@@ -6,15 +6,14 @@ const AdminBrand = () => {
 
     const [name, setName] = useState("");
     const [brand, setBarnd] = useState([]);
-    console.log(brand
-    );
+    console.log(brand);
     const [edit, setEdit] = useState("");
 
     const handleSubmit = () => {
         if (edit) {
             axios.put(`http://localhost:7000/brand/${edit}`, { brand_name: name })
                 .then((res) => {
-                    alert("categary update");
+                    alert("Brand update");
                     getuser();
                 }).catch((err) => {
                     console.log(err);
@@ -49,8 +48,8 @@ const AdminBrand = () => {
     const editdata = (id) => {
         axios.get(`http://localhost:7000/brand/${id}`)
             .then((res) => {
-                setName(res.data.name);
-                setEdit(res.data.id)
+                setName(res.data.brand_name);
+                setEdit(id)
             }).catch((err) => {
                 console.log(err);
                 return false;
@@ -92,7 +91,7 @@ const AdminBrand = () => {
                                         {/* General Form Elements */}
                                         <form>
                                             <div className="row mb-3">
-                                                <label htmlFor="inputText" className="col-sm-3 col-form-label">Barnd Name:-</label>
+                                                <label htmlFor="inputText" className="col-sm-3 col-form-label color">Brand Name:-</label>
                                                 <div className="col-sm-9">
                                                     <input type="text" className="form-control"
                                                         name="name" value={name} onChange={(e) => setName(e.target.value)}
@@ -102,7 +101,7 @@ const AdminBrand = () => {
                                             <div className="row mb-3">
                                                 <label className="col-sm-1 col-form-label"></label>
                                                 <div className="col-sm-10">
-                                                    <button type="button" className="btn text-light" style={{ backgroundColor: 'black' }} onClick={() => handleSubmit()}>Submit</button>
+                                                    <button type="button" className="btn text-light" style={{ backgroundColor: '#012970' }} onClick={() => handleSubmit()}>Submit</button>
                                                 </div>
                                             </div>
                                         </form>{/* End General Form Elements */}
@@ -112,12 +111,12 @@ const AdminBrand = () => {
                         </div>
 
                         <div className="col-lg-6">
-                            <div className="card justify-content-between p-5 pt-1">
-                                <table class="table table-striped">
+                            <div className="card justify-content-between p-5 pt-1 border-0">
+                                <table class="table table-striped mt-4" >
                                     <thead>
                                         <tr className="text-center">
-                                            <th scope="col">Brand Name</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col" className="h5" style={{color:'#012970'}}>Brand Name</th>
+                                            <th scope="col" className="h5" style={{color:'#012970'}}>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody className="text-center">
@@ -126,10 +125,10 @@ const AdminBrand = () => {
                                                     return (
                                                         <tr className="text-center">
                                                             <td>{v.brand_name}</td>
-                                                            
                                                             <td>
-                                                            <i class="bi bi-trash 3-fill h3 text-dark" onClick={()=>deleteBrand(v.id)}></i>&nbsp;&nbsp;&nbsp;&nbsp;
-
+                                                            <button className="btn btn-outline-danger" onClick={()=>deleteBrand(v.id)}><i class="bi bi-trash 3-fill" ></i>&nbsp;&nbsp;Delete</button>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <button className=" btn btn-outline-success" onClick={()=>editdata(v.id)}><i class="bi bi-pencil-square"></i>&nbsp;&nbsp;Edit</button>
                                                             </td>
                                                         </tr>
                                                     )

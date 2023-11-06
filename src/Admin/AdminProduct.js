@@ -55,12 +55,12 @@ const AdminProduct = () => {
           <div className="row">
             <div className='col-lg-2'></div>
             <div className="col-lg-8">
-              <div className="card">
+              <div className="card p-4">
                 <div className="card-body">
                   {/* General Form Elements */}
                   <form className="row g-3">
                     <div className="col-md-6">
-                      <label className="form-label">Brand Name</label>
+                      <label className="form-label color">Brand Name</label>
                       <select className='form-control' name='brandname' value={brandname} onChange={(e)=>setBrandName(e.target.value)}>
                       <option value="">---Select Brand---</option>
                       {
@@ -73,23 +73,23 @@ const AdminProduct = () => {
                       </select>
                     </div>
                     <div className="col-md-6">
-                      <label className="form-label">Product Name</label>
+                      <label className="form-label color ">Product Name</label>
                       <input type="text" className="form-control" name='name' value={productname} onChange={(e)=>setProductName(e.target.value)} />
                     </div>
                     <div className="col-md-6">
-                      <label className="form-label">Product Price</label>
+                      <label className="form-label color ">Product Price</label>
                       <input type="number" className="form-control" name='price' value={price} onChange={(e)=>setPrice(e.target.value)} />
                     </div>
                     <div className="col-md-6">
-                      <label className="form-label">Product Qty</label>
+                      <label className="form-label color ">Product Qty</label>
                       <input type="number" className="form-control"  name='qty' value={qty} onChange={(e)=>setQty(e.target.value)}/>
                     </div>
                     <div className="col-md-6">
-                      <label className="form-label">Product Image</label>
+                      <label className="form-label color ">Product Image</label>
                       <input type="text" className="form-control"  name='image' value={image} onChange={(e)=>setImage(e.target.value)}/>
                     </div>
                     <div className="col-md-6">
-                      <label className="form-label" >Market status</label>
+                      <label className="form-label color " >Market status</label>
                       <select class="form-control"  name='marketstatus' value={marketstatus} onChange={(e)=>setMarketStatus(e.target.value)}>
                         <option value="">--select status--</option>
                         <option value="trending">Trending</option>
@@ -100,7 +100,7 @@ const AdminProduct = () => {
                     </div>
                     <div className='col-md-3'></div>
                     <div className="col-md-6">
-                      <label className="form-label"> status</label>
+                      <label className="form-label color"> status</label>
                       <select class="form-control"  name='status' value={status} onChange={(e)=>setStatus(e.target.value)}>
                         <option value="">--select status--</option>
                         <option value="instock">Instock</option>
@@ -108,7 +108,11 @@ const AdminProduct = () => {
                       </select>
                     </div>
                     <div className="col-12">
-                      <button type="button" className="btn text-light" style={{backgroundColor:'black'}} onClick={()=>handlesubmit()}>Add Product</button>
+                      <button type="button" className="btn text-light" style={{ backgroundColor: '#012970' }} onClick={()=>handlesubmit()}>Add Product</button>&nbsp;&nbsp;&nbsp;
+                    <NavLink to={`/admin/viewproduct`}>
+                    <button className="btn text-light"
+                    style={{ backgroundColor: '#012970' }} type="button">viewproduct</button>
+                    </NavLink>
                     </div>
                   </form>
 
@@ -117,9 +121,7 @@ const AdminProduct = () => {
             </div>
           </div>
         </section>
-        <NavLink to={`/admin/viewproduct`}>
-          <button className="btn text-light" style={{backgroundColor:'black'}} type="button">viewproduct</button>
-        </NavLink>
+        
       </main>{/* End #main */}
 
     </center>

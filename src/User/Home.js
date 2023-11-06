@@ -79,13 +79,13 @@ const Home = () => {
             <div className='col-lg-12 row pt-5'>
                 <div className='col-lg-3'></div>
                 <div className='col-lg-6'>
-                    <h1 className="text-center">All Watches</h1>
-                    <p className=' text-center'>With thousands of pre-owned luxury watches from the best brands around the world, we are dedicated to bringing collectors and enthusiasts an unrivaled selection of timepieces. Our in-house team of Swiss-trained watchmakers, technicians, and refinishers.</p>
+                    <h1 className="text-center" style={{color:'#012970'}}>All Watches</h1>
+                    <p className=' text-center text-muted'>With thousands of pre-owned luxury watches from the best brands around the world, we are dedicated to bringing collectors and enthusiasts an unrivaled selection of timepieces. Our in-house team of Swiss-trained watchmakers, technicians, and refinishers.</p>
                 </div>
                 <div className='col-lg-3'></div>
             </div>
             <div className="container p-5">
-                <h2 className="pt-5">Patek Philippe Watches</h2>
+                <h2 className="pt-5" style={{color:'#012970'}}>Patek Philippe Watches</h2>
                 <hr />
                 <div className="row">
                     {
@@ -106,7 +106,7 @@ const Home = () => {
 
                 </div>
 
-                <h2 className="pt-5">Rolex Watches</h2>
+                <h2 className="pt-5" style={{color:'#012970'}}>Rolex Watches</h2>
                 <hr />
                 <div className="row">
                     {
@@ -143,7 +143,7 @@ const Home = () => {
                 </div>
 
 
-                <h2 className="pt-5"> Cartier Watches</h2>
+                <h2 className="pt-5" style={{color:'#012970'}}> Cartier Watches</h2>
                 <hr />
                 <div className="row">
                     {
@@ -164,7 +164,7 @@ const Home = () => {
 
                 </div>
 
-                <h2 className="pt-5"> Greubel Forsey Watches</h2>
+                <h2 className="pt-5" style={{color:'#012970'}}> Greubel Forsey Watches</h2>
                 <hr />
                 <div className="row">
                     {
