@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, json } from "react-router-dom";
 
 const AdminRegister = () => {
 
@@ -34,12 +34,14 @@ const AdminRegister = () => {
         axios.get(`http://localhost:7000/admin`)
             .then((res) => {
                 setRecord(res.data);
+                // localStorage.setItem('adminLogin',JSON.stringify(res.data));
                 console.log(res.data);
             }).catch((err) => {
                 console.log(err);
                 return false;
             })
     }
+
 
     useEffect(() => {
         getuser();
@@ -68,23 +70,19 @@ const AdminRegister = () => {
                                             <div className="col-12">
                                                 <label htmlFor="yourName" className="form-label">Your Name</label>
                                                 <input type="text" name="name" className="form-control" id="yourName" onChange={(e)=>setName(e.target.value)} value={name} required />
-                                                <div className="invalid-feedback">Please, enter your name!</div>
                                             </div>
                                             <div className="col-12">
                                                 <label htmlFor="yourEmail" className="form-label">Your Email</label>
                                                 <input type="email" name="email" className="form-control" id="yourEmail" onChange={(e)=>setEmail(e.target.value)} value={email} required />
-                                                <div className="invalid-feedback">Please enter a valid Email adddress!</div>
                                             </div>
 
                                             <div className="col-12">
                                                 <label htmlFor="yourPassword" className="form-label">Password</label>
                                                 <input type="password" name="password" className="form-control" id="yourPassword" onChange={(e)=>setPassword(e.target.value)} value={password} required />
-                                                <div className="invalid-feedback">Please enter your password!</div>
                                             </div>
                                             <div className="col-12">
-                                                <label htmlFor="yourPassword" className="form-label">Password</label>
+                                                <label htmlFor="yourPassword" className="form-label">Confrim Password</label>
                                                 <input type="cpassword" name="cpassword" className="form-control" id="yourPassword" onChange={(e)=>setConfrompassword(e.target.value)} value={confrompassword} required />
-                                                <div className="invalid-feedback">Please enter your confrompassword!</div>
                                             </div>
                                             <center>
                                                 <div className="col-12">
@@ -92,7 +90,7 @@ const AdminRegister = () => {
                                                 </div>
                                             </center>
                                             <div className="col-12">
-                                                <p className="small mb-0">Already have an account? <NavLink to={`/admin/adminlogin`}>Log in</NavLink></p>
+                                                <p className="small mb-0">Already have an account? <NavLink to={`/login`}>Log in</NavLink></p>
                                             </div>
 
                                         </form>

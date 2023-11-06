@@ -19,6 +19,12 @@ import AdminViewproduct from './Admin/AdminViewproduct';
 import Users from './Admin/Users';
 import UserDetails from './Admin/UserDetails';
 import AdminSlider from './Admin/AdminSlider';
+import AdminForget from './Admin/AdminForget';
+import AdminOtp from './Admin/AdminOtp';
+import AdminNewpassword from './Admin/AdminNewpassword';
+import Forget from './User/Forget';
+import Otp from './User/Otp';
+import Newpassword from './User/Newpassword';
 
 function App() {
   return (
@@ -32,6 +38,9 @@ function App() {
           <Route path='/user/cart' element={<Cart />}></Route>
           <Route path='/user/register' element={<Register />}></Route>
           <Route path='/user/login' element={<Login />}></Route>
+          <Route path='/user/forget' element={<Forget />}></Route>
+          <Route path='/user/otp' element={<Otp />}></Route>
+          <Route path='/user/newpassword' element={<Newpassword />}></Route>
         </Route>
       {/*Admin*/}
         <Route path='/admin' element={<AdminLayout/>}>
@@ -44,8 +53,11 @@ function App() {
           <Route path='/admin/userdetails/:userId' element={<UserDetails />}></Route>
         </Route>
 
-        <Route path='/admin/adminlogin' element={<AdminLogin />}></Route>
-        <Route path='/admin/adminregister' element={<AdminRegister />}></Route>
+        <Route path='/login' element={<AdminLogin />}></Route>
+        <Route path='/register' element={<AdminRegister />}></Route>
+        <Route path='/forget' element={<AdminForget />}></Route>
+        <Route path='/otp' element={<AdminOtp/>}></Route>
+        <Route path='/newpassword' element={<AdminNewpassword />}></Route>
 
       </Routes>
     </BrowserRouter>

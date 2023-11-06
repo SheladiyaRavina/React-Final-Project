@@ -3,48 +3,30 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-const AdminLogin =()=>{
+const AdminNewpassword =()=>{
 
     const navigate = useNavigate();
-    const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
-    const [admin,setAdmin] = useState("");
-    console.log(admin);
+    const [cpassword,setCpassword] = useState("");
 
     const handlesubmit = () => {
-        axios.get(`http://localhost:7000/admin?email=${email}&password=${password}`).then((res)=>{
-            if(res.data){
-                localStorage.setItem('adminLogin',JSON.stringify(res.data[0]));
-                navigate('/admin/dashbord');
-            }else{
-                alert("Email and Password not valid")
-            }
-        }).catch((err)=>{
-            console.log(err);
+        let admindata = JSON.parse(localStorage.getItem('adminLogin'));
+        if(password === cpassword){
+            axios.patch(`http://localhost:7000/admin/${admindata.id}`,{
+                password :password
+            }).then((res)=>{
+                localStorage.setItem('adminLogin',JSON.stringify(res.data));
+                navigate('/login');
+            }).catch((err)=>{
+                console.log(err);
+                return false
+            })
+            // navigate('/login');
+        }else{
+            alert("password do not match");
             return false;
-        })
-    }
-
-    const Forget =()=>{
-        axios.get(`http://localhost:7000/admin?email=${email}&password=${password}`).then((res)=>{
-            if(res.data){
-                localStorage.setItem('adminLogin',JSON.stringify(res.data[0]));
-                navigate('/forget');
-            return false;
-            }
-        }).catch((err)=>{
-            console.log(err);
-        })
-    }
-
-    useEffect(()=>{
-        let data = JSON.parse(localStorage.getItem('adminLogin'));
-        if(data){
-            navigate('/admin/dashbord')
         }
-        setAdmin(data)    
-    },[])
-
+    }
 
     return(
 
@@ -67,21 +49,19 @@ const AdminLogin =()=>{
                                             <p className="text-center small">Enter your username & password to login</p>
                                         </div>
                                         <form className="row g-3 needs-validation" noValidate>
-                                            
-                                            <div className="col-12">
-                                                <label htmlFor="yourEmail" className="form-label">Your Email</label>
-                                                <input type="email" name="email" className="form-control" id="yourEmail" onChange={(e)=>setEmail(e.target.value)} value={email} required />
-                                                <div className="invalid-feedback">Please enter a valid Email adddress!</div>
-                                            </div>
 
                                             <div className="col-12">
-                                                <label htmlFor="yourPassword" className="form-label">Password</label>
+                                                <label htmlFor="yourPassword" className="form-label">New Password</label>
                                                 <input type="password" name="password" className="form-control" id="yourPassword" onChange={(e)=>setPassword(e.target.value)} value={password} required />
                                                 <div className="invalid-feedback">Please enter your password!</div>
                                             </div>
-                                            <div className="col-12 text-end">
-                                                <NavLink style={{fontSize:'14px'}} onClick={()=>Forget()}>Forget Password?</NavLink>
-                                            </div>
+
+                                            <div className="col-12">
+                                            <label htmlFor="yourPassword" className="form-label">Confrim Password</label>
+                                            <input type="password" name="password" className="form-control" id="yourPassword" onChange={(e)=>setCpassword(e.target.value)} value={cpassword} required />
+                                            <div className="invalid-feedback">Please enter your password!</div>
+                                        </div>
+                                            
                                             <center>
                                                 <div className="col-12">
                                                     <button className="btn text-light" style={{ backgroundColor: '#012970' }} type="button" onClick={() => handlesubmit()}>Sing In</button>
@@ -104,4 +84,5 @@ const AdminLogin =()=>{
    
     );
 }
-export default AdminLogin;
+export default AdminNewpassword;
+

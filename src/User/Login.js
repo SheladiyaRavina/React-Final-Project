@@ -29,16 +29,22 @@ const Login = () => {
         }
     }
 
+    const Forget =()=>{
+        axios.get(`http://localhost:7000/login?email=${email}&password=${password}`).then((res)=>{
+            if(res.data){
+                localStorage.setItem('checkUserLogin',JSON.stringify(res.data[0]));
+                navigate('/user/forget');
+            return false;
+            }
+        }).catch((err)=>{
+            console.log(err);
+        })
+    }
+
     return (
         <div style={{ fontFamily: 'poppins' }}>
             <div className='container'>
-                <h1 className='text-center p-5'>User Login</h1>
-                <div className='row  mx-auto' style={{ border: '1px solid #CBCBCB',width:'60%' }}>
-                    <div className='row text-center'>
-                        <NavLink to={`/user/login`} className='col-6 text-uppercase pt-4 text-dark'>Sign In</NavLink>
-                        <NavLink to={`/user/register`} className='col-6 text-uppercase pt-4 text-dark'>Craete Account</NavLink>
-                        <hr className='mt-4' />
-                    </div>
+                <div className='row  mx-auto card mt-5 border-0' style={{ border: '1px solid #CBCBCB',width:'40%' }}>
                     <div className='col-lg-12 ps-5 pb-5 pe-5 pt-4'>
                         <h4 className='fw-normal'>Sign In</h4>
                         <p className='text-muted' style={{ fontSize: '15px' }}>Sign in to check order status, add to wishlist, update billing information, or review past orders.</p>
@@ -52,8 +58,10 @@ const Login = () => {
                                 <label htmlFor="exampleInputPassword1" className="form-label fw-bold" style={{ fontSize: '13px' }}>Password</label><br />
                                 <input type="password" name='password' onChange={(e) => setPassword(e.target.value)} value={password} className="w-100" id="exampleInputPassword1" style={{ backgroundColor: '#F4F4F4', border: '1px solid #1D1C1B' }} />
                             </div>
-
-                            <button type="button" onClick={() => handleSubmit()} className="w-100 border-0 text-uppercase text-light p-2 mt-3" style={{ backgroundColor: 'black', fontSize: '12px' }}>Sign In</button>
+                            <div className='mb-3 text-end'>
+                                <div onClick={()=>Forget()} style={{fontSize:'14px'}} className='text-primary'>forget password?</div>
+                            </div>
+                            <button type="button" onClick={() => handleSubmit()} className="w-100 border-0 text-uppercase text-light p-2 mt-3" style={{ backgroundColor: '#012970', fontSize: '12px' }}>Sign In</button>
                         </form>
                         <hr className='mt-4' />
                         <div className="w-100 mx-auto mt-4" id="exampleInputPassword1" style={{ border: '1px solid #1D1C1B',height:'40px' }} >
@@ -63,10 +71,10 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
-                <div className='row p-5 mt-5 mx-auto mb-5' style={{ border: '1px solid #CBCBCB',width:'60%' }}>
+                <div className='row p-5 mx-auto mb-5 border-0' style={{ border: '1px solid #CBCBCB',width:'40%' }}>
                     <div className='col-lg-12 text-center'>
-                        <h5 className='text-center fw-bold'>Don't Have an Account?</h5>
-                        <NavLink to={`/user/register`} className='text-center fs-6 text-dark'>CREATE AN ACCOUNT</NavLink>
+                        <h5 className='text-center color'>Don't Have an Account?</h5>
+                        <NavLink to={`/user/register`} className='text-center text-primary' style={{fontSize:'12px'}}>CREATE AN ACCOUNT</NavLink>
                     </div>
                 </div>
             </div>

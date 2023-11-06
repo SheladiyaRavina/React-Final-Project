@@ -131,11 +131,29 @@
     {
       "name": "Grand Complications",
       "price": "129950",
-      "qty": 1,
+      "qty": 2,
       "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320078545252638_pate306549_4886321_96669_41-37.jpg?w=1134&h=1134&auto=compress,format",
       "brand": "Patek Philippe",
       "userId": 2,
       "id": 12
+    },
+    {
+      "name": "GMT-Master II",
+      "price": "39950",
+      "qty": 2,
+      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638300488586919150_6646c305-6b51-4671-8141-aff4aeadabc4.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Rolex",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "name": "Calatrava",
+      "price": "19950",
+      "qty": 1,
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638279625887194620_PATE319661_4822565_95214_CORRECTION-1.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "Patek Philippe",
+      "userId": 2,
+      "id": 14
     }
   ],
   "slider": [

@@ -36,33 +36,13 @@ const Register = () => {
     return (
         <div style={{ fontFamily: 'poppins' }}>
             <div className='container'>
-                <h1 className='text-center p-5'>User Register</h1>
-                <div className='row mx-auto' style={{ border: '1px solid #CBCBCB',width:'60%' }}>
-                    <div className='row text-center'>
-                        <NavLink to={`/user/login`} className='col-6 text-uppercase pt-4 text-dark'>Sign In</NavLink>
-                        <NavLink to={`/user/register`} className='col-6 text-uppercase pt-4 text-dark'>Craete Account</NavLink>
-                        <hr className='mt-4' />
-                    </div>
+                <div className='row mx-auto  card border-0 mt-5' style={{ border: '1px solid #CBCBCB',width:'40%' }}>
                     <div className='col-lg-12 ps-5 pb-5 pe-5 pt-4'>
                         <h4 className='fw-normal'>Create An Account
                         </h4>
-                        <p className='text-muted' style={{ fontSize: '15px' }}>
-                            Create an account by social or email for faster check out experience, easy order tracking and save items to your wishlist.</p>
-
-                        <hr className='mt-4 mb-4' />
-                        <h5>Register With Social</h5>
-                        <div className="w-100 mx-auto mt-4" id="exampleInputPassword1" style={{ border: '1px solid #1D1C1B', height: '40px' }} >
-                            <center>
-                                <img src='https://www.thewatchbox.com/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw8fd2515a/images/social/signin-google.svg' className='mt-2'></img>
-                            </center>
-                        </div>
-                        <div className="w-100 mx-auto mt-4" id="exampleInputPassword1" style={{ border: '1px solid #1D1C1B', height: '40px' }} >
-                            <center>
-                                <img src='https://www.thewatchbox.com/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw08f93c61/images/social/signin-facebook.svg' className='mt-2'></img>
-                            </center>
-                        </div>
-                        <hr className='mt-4 mb-4' />
-                        <h5>Register With Email</h5>
+                       
+                        
+                        <h5 className='color'>Register With Email</h5>
 
                         <form className='fs-5'>
                             <div className="mb-3">
@@ -81,18 +61,26 @@ const Register = () => {
                             <label htmlFor="exampleInputPassword1" className="form-label fw-bold" style={{ fontSize: '13px' }}>Confrom Password</label><br />
                             <input type="password" name='cpassword' onChange={(e) => setConfrompassword(e.target.value)} value={confrompassword} className="w-100" id="exampleInputPassword1" style={{ backgroundColor: '#F4F4F4', border: '1px solid #1D1C1B' }} />
                             </div>
-                            <p style={{fontSize:'13px'}}>By creating an account, you agree to our Privacy Policy and Terms & Conditions.</p>
-                            <button type="button" onClick={() => handleSubmit()} className="w-100 border-0 text-uppercase text-light p-2" style={{ backgroundColor: 'black', fontSize: '12px' }}>create account</button>
-                        </form>                                                
+                            <p style={{fontSize:'13px'}} className='text-muted'>By creating an account, you agree to our Privacy Policy and Terms & Conditions.</p>
+                            <button type="button" onClick={() => handleSubmit()} className="w-100 border-0 text-uppercase text-light p-2" style={{ backgroundColor: '#012970', fontSize: '12px' }}>create account</button>
+                        </form>        
+                        <hr className='mt-4 mb-4' />
+
+                        <h5 className='color'>Register With Social</h5>
+                        <div className="w-100 mx-auto mt-4" id="exampleInputPassword1" style={{ border: '1px solid #1D1C1B', height: '40px' }} >
+                            <center>
+                                <img src='https://www.thewatchbox.com/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw8fd2515a/images/social/signin-google.svg' className='mt-2'></img>
+                            </center>
+                        </div>                                        
                     </div>
                 </div>
-                <div className='row p-5 mt-5 mx-auto mb-5' style={{ border: '1px solid #CBCBCB',width:'60%' }}>
-                    <div className='col-lg-12 text-center'>
-                        <h5 className='text-center fw-bold'>Already Have an Account?
+                
+                    <div className='col-lg-12 text-center pb-5'>
+                        <h5 className='text-center color'>Already Have an Account?
                         </h5>
-                        <NavLink to={`/user/login`} className='text-center fs-6 text-dark'>sign in</NavLink>
+                        <NavLink to={`/user/login`} className='text-center fs-6 text-primary' style={{fontSize:'12px'}}>sign in</NavLink>
                     </div>
-                </div>
+                
             </div>
         </div>
     )

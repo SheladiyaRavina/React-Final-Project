@@ -251,13 +251,13 @@ const AdminHeader = () => {
                             !loginAdmin ? (
                                 <div>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link collapsed" to={`/admin/adminregister`}>
+                                        <NavLink className="nav-link collapsed" to={`/register`}>
                                             <i className="bi bi-card-list" />
                                             <span>Register</span>
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link collapsed" to={`/admin/adminlogin`} >
+                                        <NavLink className="nav-link collapsed" to={`/login`} >
                                             <i className="bi bi-box-arrow-in-right" />
                                             <span>Login</span>
                                         </NavLink>
