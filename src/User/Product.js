@@ -8,7 +8,7 @@ const Product = () => {
   const [allproduct, setAllproduct] = useState([]);
   const [brand, setBrand] = useState([]);
   const [marketstatus, setMarketStatus] = useState([]);
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   const [sortData, setSortData] = useState("");
 
   const [currentpage, setCurrentpage] = useState(1);
@@ -27,15 +27,15 @@ const Product = () => {
     setCurrentpage(id);
   }
 
-  const CategoryPriceData = async (price) => {
-    let record = await axios.get(`http://localhost:7000/product?price_gte=${price[0]}&price_lte=${price[1]}`)
-    setAllproduct(record.data);
-  }
+  // const CategoryPriceData = async (price) => {
+  //   let record = await axios.get(`http://localhost:7000/product?price_gte=${price[0]}&price_lte=${price[1]}`)
+  //   setAllproduct(record.data);
+  // }
 
-  const searchData = async (e) => {
-    let data = await axios.get(`http://localhost:7000/product?q=${e}`)
-    setAllproduct(data.data)
-  }
+  // const searchData = async (e) => {
+  //   let data = await axios.get(`http://localhost:7000/product?q=${e}`)
+  //   setAllproduct(data.data)
+  // }
 
   const AllProduct = () => {
     axios.get(`http://localhost:7000/product?status=instock`)
@@ -130,7 +130,7 @@ const Product = () => {
       <div className='row'>
         <div className='col-lg-3'>
           {/* search */}
-          <input type='text' className='from-control mb-5 card p-2 w-100' onChange={(e) => searchData(e.target.value)} value={search} placeholder='Search watch name....' name='serach'/>
+      
 
           {/* price */}
           <h5 className='fw-bold p-2 border-0' style={{ color: '#012970' }}>Price Filter</h5>

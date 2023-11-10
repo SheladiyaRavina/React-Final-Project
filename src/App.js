@@ -25,6 +25,7 @@ import AdminNewpassword from './Admin/AdminNewpassword';
 import Forget from './User/Forget';
 import Otp from './User/Otp';
 import Newpassword from './User/Newpassword';
+import UserProfile from './User/UserProfile';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path='/user/forget' element={<Forget />}></Route>
           <Route path='/user/otp' element={<Otp />}></Route>
           <Route path='/user/newpassword' element={<Newpassword />}></Route>
+          <Route path='/user/profile' element={<UserProfile />}></Route>
         </Route>
       {/*Admin*/}
         <Route path='/admin' element={<AdminLayout/>}>

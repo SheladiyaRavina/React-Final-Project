@@ -53,6 +53,13 @@
       "password": "121212",
       "cpasswod": "121212",
       "id": 4
+    },
+    {
+      "name": "e",
+      "email": "e",
+      "password": "15",
+      "cpasswod": "e",
+      "id": 5
     }
   ],
   "Cart": [
@@ -224,7 +231,7 @@
       "image": " https://watchbox-cdn.imgix.net/posted-product-images/638270891895527410_84fa1711-6c10-41e3-b978-b20cba41dc4b.jpg?w=1134&h=1134&auto=compress,format",
       "price": "119950",
       "status": "instock",
-      "marketstatus": "latest",
+      "marketstatus": "trending",
       "qty": 1
     },
     {
@@ -324,7 +331,7 @@
       "image": "https://watchbox-cdn.imgix.net/posted-product-images/638327292233559950_CART308912_4884565_98013_40_1.jpg?w=1134&h=1134&auto=compress,format",
       "price": "6950",
       "status": "instock",
-      "marketstatus": "best",
+      "marketstatus": "latest",
       "qty": 1
     },
     {

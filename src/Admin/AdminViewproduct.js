@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios';
 
 const AdminViewproduct = () => {
     const [product, setProduct] = useState([]);
+    const [search, setSearch] = useState("");
+    console.log(search);
     console.log(product);
 
     const [marketstatus, setMarketStatus] = useState(["trending", "latest", "upcomming", "best"])
@@ -23,12 +25,12 @@ const AdminViewproduct = () => {
         })
     }
 
-
     const selectMarketstatus = (id, value) => {
         axios.patch(`http://localhost:7000/product/${id}`, {
             marketstatus: value
         }).then((res) => {
-            alert("value updated..");
+            toast.success("MarketStatus successfully update");
+            // alert("value updated..");
         }).catch((err) => {
             console.log(err);
             return false;
@@ -39,7 +41,8 @@ const AdminViewproduct = () => {
         axios.patch(`http://localhost:7000/product/${id}`, {
             status: value
         }).then((res) => {
-            alert("value updated..");
+            toast.success("Status successfully update");
+            // alert("value updated..");
         }).catch((err) => {
             console.log(err);
             return false;
@@ -55,6 +58,13 @@ const AdminViewproduct = () => {
             return false;
         })
     }
+
+    const searchData = async(e) => {
+        setSearch(e.target);
+        let data = await axios.get(`http://localhost:7000/product?q=${e}`)
+        setProduct(data.data);
+      }
+    
     useEffect(() => {
         viewproduct();
     }, [])
@@ -65,6 +75,7 @@ const AdminViewproduct = () => {
             <div className="pagetitle">
                 <h1 className='text-center mb-3'>View All Watches</h1>
             </div>{/* End Page Title */}
+            <input type='text' className='from-control mb-5 card p-2 w-100' onChange={(e) => searchData(e.target.value)} value={search} placeholder='Search watch name....' name='serach'/>
             <div>
                 <table class="table table-striped" border={1} >
                     <thead>
@@ -126,6 +137,7 @@ const AdminViewproduct = () => {
                     </NavLink>
                 </center>
             </div>
+            <ToastContainer />
         </main>
     )
 }

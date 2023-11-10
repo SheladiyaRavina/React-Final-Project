@@ -29,18 +29,6 @@ const Login = () => {
         }
     }
 
-    const Forget =()=>{
-        axios.get(`http://localhost:7000/login?email=${email}&password=${password}`).then((res)=>{
-            if(res.data){
-                localStorage.setItem('checkUserLogin',JSON.stringify(res.data[0]));
-                navigate('/user/forget');
-            return false;
-            }
-        }).catch((err)=>{
-            console.log(err);
-        })
-    }
-
     return (
         <div style={{ fontFamily: 'poppins' }}>
             <div className='container'>
@@ -59,7 +47,7 @@ const Login = () => {
                                 <input type="password" name='password' onChange={(e) => setPassword(e.target.value)} value={password} className="w-100" id="exampleInputPassword1" style={{ backgroundColor: '#F4F4F4', border: '1px solid #1D1C1B' }} />
                             </div>
                             <div className='mb-3 text-end'>
-                                <div onClick={()=>Forget()} style={{fontSize:'14px'}} className='text-primary'>forget password?</div>
+                                <NavLink to={`/user/forget`} style={{fontSize:'14px'}} className='text-primary'>forget password?</NavLink>
                             </div>
                             <button type="button" onClick={() => handleSubmit()} className="w-100 border-0 text-uppercase text-light p-2 mt-3" style={{ backgroundColor: '#012970', fontSize: '12px' }}>Sign In</button>
                         </form>
