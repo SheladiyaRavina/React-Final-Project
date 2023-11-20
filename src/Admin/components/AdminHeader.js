@@ -218,31 +218,31 @@ const AdminHeader = () => {
                         <li className="nav-heading">Pages</li>
                         <li className="nav-item">
                             <NavLink className="nav-link collapsed" to={`/admin/brand`} >
-                                <i className="bi bi-person" />
+
                                 <span>Brands</span>
                             </NavLink>
                         </li>{/* End Profile Page Nav */}
                         <li className="nav-item">
                             <NavLink className="nav-link collapsed" to={`/admin/slider`} >
-                                <i className="bi bi-person" />
+
                                 <span>Sliders</span>
                             </NavLink>
                         </li>{/* End Profile Page Nav */}
                         <li className="nav-item">
                             <NavLink className="nav-link collapsed" to={`/admin/product`}>
-                                <i className="bi bi-question-circle" />
+
                                 <span>Product</span>
                             </NavLink>
                         </li>{/* End F.A.Q Page Nav */}
                         <li className="nav-item">
                             <NavLink className="nav-link collapsed" to={`/admin/user`} >
-                                <i className="bi bi-person" />
+
                                 <span>Users</span>
                             </NavLink>
                         </li>{/* End Profile Page Nav */}
                         <li className="nav-item">
                             <NavLink className="nav-link collapsed" >
-                                <i className="bi bi-envelope" />
+
                                 <span>Contact</span>
                             </NavLink>
                         </li>{/* End Contact Page Nav */}
@@ -252,21 +252,20 @@ const AdminHeader = () => {
                                 <div>
                                     <li className="nav-item">
                                         <NavLink className="nav-link collapsed" to={`/register`}>
-                                            <i className="bi bi-card-list" />
+
                                             <span>Register</span>
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link collapsed" to={`/login`} >
-                                            <i className="bi bi-box-arrow-in-right" />
+
                                             <span>Login</span>
                                         </NavLink>
                                     </li>
                                 </div>
                             ) : (
                                 <li className="nav-item">
-                                    <NavLink className="nav-link collapsed"  >
-                                        <i className="bi bi-box-arrow-in-right" />
+                                    <NavLink className="nav-link collapsed"  >  
                                         <span onClick={() => logOut()}>Logout</span>
                                     </NavLink>
                                 </li>

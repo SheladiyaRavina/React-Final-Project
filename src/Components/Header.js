@@ -27,12 +27,21 @@ const Header = () => {
                         </form>
                         <div className="col-xl-7 justify-content-end">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                                <li className="nav-item">
+                                    <NavLink to="/" className="nav-link fw-bold me-2" aria-current="page" style={{ color: '#012970' }}>Home</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink to="/user/product" style={{ color: '#012970' }} className="nav-link fw-bold me-2" aria-current="page">Product</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink to="/user/login" className="nav-link fw-bold me-2" style={{ color: '#012970' }} aria-current="page">Login</NavLink>
+                                </li>
                                 {
                                     !loginUser ?
                                         (
-                                                <li className="nav-item">
-                                                    <NavLink to="/user/register" className="nav-link fw-bold me-2" style={{ color: '#012970' }} aria-current="page">Register</NavLink>
-                                                </li>
+                                            <li className="nav-item">
+                                                <NavLink to="/user/register" className="nav-link fw-bold me-2" style={{ color: '#012970' }} aria-current="page">Register</NavLink>
+                                            </li>
 
                                         ) : (
                                             <>
@@ -45,15 +54,8 @@ const Header = () => {
                                             </>
                                         )
                                 }
-                                <li className="nav-item">
-                                    <NavLink to="/user/login" className="nav-link fw-bold me-2" style={{ color: '#012970' }} aria-current="page">Login</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink to="/" className="nav-link fw-bold me-2" aria-current="page" style={{ color: '#012970' }}>Home</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink to="/user/product" style={{ color: '#012970' }} className="nav-link fw-bold me-2" aria-current="page">Product</NavLink>
-                                </li>
+
+
 
                                 <li className="nav-item">
                                     <NavLink to="/user/profile" style={{ color: '#012970' }} className="nav-link fw-bold me-2" aria-current="page">Contact</NavLink>

@@ -7,8 +7,6 @@ import axios from 'axios';
 
 const AdminViewproduct = () => {
     const [product, setProduct] = useState([]);
-    const [search, setSearch] = useState("");
-    console.log(search);
     console.log(product);
 
     const [marketstatus, setMarketStatus] = useState(["trending", "latest", "upcomming", "best"])
@@ -59,11 +57,6 @@ const AdminViewproduct = () => {
         })
     }
 
-    const searchData = async(e) => {
-        setSearch(e.target);
-        let data = await axios.get(`http://localhost:7000/product?q=${e}`)
-        setProduct(data.data);
-      }
     
     useEffect(() => {
         viewproduct();
@@ -75,7 +68,6 @@ const AdminViewproduct = () => {
             <div className="pagetitle">
                 <h1 className='text-center mb-3'>View All Watches</h1>
             </div>{/* End Page Title */}
-            <input type='text' className='from-control mb-5 card p-2 w-100' onChange={(e) => searchData(e.target.value)} value={search} placeholder='Search watch name....' name='serach'/>
             <div>
                 <table class="table table-striped" border={1} >
                     <thead>

@@ -10,7 +10,7 @@ const Cart = () => {
     console.log(cart);
 
     const deleteData = (id) => {
-        axios.delete(`http://localhost:7000/cart/${id}`).then((res) => {
+        axios.delete(`http://localhost:7000/Cart/${id}`).then((res) => {
             alert('delete...');
             CartAdd();
         }).catch((err) => {
@@ -20,7 +20,7 @@ const Cart = () => {
     }
 
     const CartAdd = () => {
-        axios.get(`http://localhost:7000/cart?userId=${UserAuth().id}`)
+        axios.get(`http://localhost:7000/Cart?userId=${UserAuth().id}`)
             .then((res) => {
                 setCart(res.data)
             }).catch((err) => {

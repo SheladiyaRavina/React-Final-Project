@@ -55,40 +55,22 @@
       "id": 4
     },
     {
-      "name": "e",
-      "email": "e",
-      "password": "15",
-      "cpasswod": "e",
+      "name": "r",
+      "email": "r",
+      "password": "r",
+      "cpasswod": "r",
       "id": 5
     }
   ],
   "Cart": [
     {
-      "name": " Complications",
-      "price": "77950",
-      "qty": 1,
-      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638309838502972299_pate323671_4886354_98126_41-1.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Patek Philippe",
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "name": "Grand Complications",
-      "price": "129950",
-      "qty": 1,
-      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320078545252638_pate306549_4886321_96669_41-37.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Patek Philippe",
-      "userId": 3,
-      "id": 4
-    },
-    {
-      "name": "Balancier",
-      "price": "169950",
-      "qty": 1,
-      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638164754859824794_grue300315_4813911_94712_45-7.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Greubel_Forsey",
-      "userId": 3,
-      "id": 5
+      "name": "Classique",
+      "price": "311995",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638326008787017469_jour313300_4784021_71596_40-1.jpg?w=1134&h=1134&auto=compress,format",
+      "brand": "F.P. Journe",
+      "userId": 5,
+      "id": 1
     },
     {
       "name": "Grand Complications",
@@ -97,70 +79,7 @@
       "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320078545252638_pate306549_4886321_96669_41-37.jpg?w=1134&h=1134&auto=compress,format",
       "brand": "Patek Philippe",
       "userId": 5,
-      "id": 6
-    },
-    {
-      "name": "Calatrava",
-      "price": "19950",
-      "qty": 1,
-      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638279625887194620_PATE319661_4822565_95214_CORRECTION-1.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Patek Philippe",
-      "userId": 1,
-      "id": 7
-    },
-    {
-      "name": "Calatrava",
-      "price": "19950",
-      "qty": 2,
-      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638279625887194620_PATE319661_4822565_95214_CORRECTION-1.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Patek Philippe",
-      "userId": 5,
-      "id": 9
-    },
-    {
-      "name": "Santos",
-      "price": "7950",
-      "qty": 2,
-      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638301359098120106_CART310223_4878898_97682_39_1.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Cartier",
-      "userId": 5,
-      "id": 10
-    },
-    {
-      "name": "Grand Complications",
-      "price": "119950",
-      "qty": 2,
-      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638270891895527410_84fa1711-6c10-41e3-b978-b20cba41dc4b.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Patek Philippe",
-      "userId": 2,
-      "id": 11
-    },
-    {
-      "name": "Grand Complications",
-      "price": "129950",
-      "qty": 2,
-      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320078545252638_pate306549_4886321_96669_41-37.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Patek Philippe",
-      "userId": 2,
-      "id": 12
-    },
-    {
-      "name": "GMT-Master II",
-      "price": "39950",
-      "qty": 2,
-      "image": " https://watchbox-cdn.imgix.net/posted-product-images/638300488586919150_6646c305-6b51-4671-8141-aff4aeadabc4.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Rolex",
-      "userId": 2,
-      "id": 13
-    },
-    {
-      "name": "Calatrava",
-      "price": "19950",
-      "qty": 1,
-      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638279625887194620_PATE319661_4822565_95214_CORRECTION-1.jpg?w=1134&h=1134&auto=compress,format",
-      "brand": "Patek Philippe",
-      "userId": 2,
-      "id": 14
+      "id": 2
     }
   ],
   "slider": [
@@ -211,6 +130,10 @@
     {
       "brand_name": "Patek Philippe",
       "id": 6
+    },
+    {
+      "brand_name": "F.P. Journe",
+      "id": 7
     }
   ],
   "product": [
@@ -220,7 +143,7 @@
       "brand": "Patek Philippe",
       "image": "https://watchbox-cdn.imgix.net/posted-product-images/638252971950586375_PATE323200_4792644_92915_37_1.jpg?w=1134&h=1134&auto=compress,format",
       "price": "49950",
-      "status": "outstock",
+      "status": "instock",
       "marketstatus": "latest",
       "qty": 1
     },
@@ -290,7 +213,7 @@
       "brand": "Rolex",
       "image": " https://watchbox-cdn.imgix.net/posted-product-images/638314211283506549_0cb7402d-1d21-4b3b-9b5e-6c3255f0be87.jpg?w=1134&h=1134&auto=compress,format",
       "price": "39950",
-      "status": "outstock",
+      "status": "instock",
       "marketstatus": "latest",
       "qty": 1
     },
@@ -350,7 +273,7 @@
       "brand": "Cartier",
       "image": " https://watchbox-cdn.imgix.net/posted-product-images/638182976998041791_CART605087_4814893_94739_2d_0001.jpg?w=1134&h=1134&auto=compress,format",
       "price": "10450",
-      "status": "outstock",
+      "status": "instock",
       "marketstatus": "upcomming",
       "qty": 1
     },
@@ -410,9 +333,109 @@
       "brand": "Greubel_Forsey",
       "image": "https://watchbox-cdn.imgix.net/posted-product-images/638254476402685329_grue300471_4772117_92116_39_CORRECTION-1.jpg?h=1400&w=1400&auto=compress,format",
       "price": "179950",
-      "status": "outstock",
+      "status": "instock",
       "marketstatus": "upcomming",
       "qty": 1
+    },
+    {
+      "name": "Grand Seconde",
+      "price": "17950",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638285806992731693_jaqu100471_4863908_45_1.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "trending",
+      "status": "instock",
+      "brand": "Jaquet Droz",
+      "id": 21
+    },
+    {
+      "name": "Grand Seconde",
+      "price": "9950",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638309104430782081_d0bbb11c-a190-4496-8088-079fbdd62df6.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "latest",
+      "status": "instock",
+      "brand": "Jaquet Droz",
+      "id": 22
+    },
+    {
+      "name": "Grande Heure",
+      "price": "5450",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638319498313545938_jaqu100521_4875266_43_1.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "upcomming",
+      "status": "instock",
+      "brand": "Jaquet Droz",
+      "id": 23
+    },
+    {
+      "name": "Astrale",
+      "price": "19450",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320079039572427_jaqu200158_4875399_39-72.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "best",
+      "status": "instock",
+      "brand": "Jaquet Droz",
+      "id": 24
+    },
+    {
+      "name": "SW Chronograph",
+      "price": "12450",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638284943620104698_jqu100489_4863973_45_1.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "trending",
+      "status": "instock",
+      "brand": "Jaquet Droz",
+      "id": 25
+    },
+    {
+      "name": "Octa",
+      "price": "79950",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638150846006148717_jour306923_4512752_76052_40-1.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "trending",
+      "status": "instock",
+      "brand": "F.P. Journe",
+      "id": 26
+    },
+    {
+      "name": "Linesport",
+      "price": "13995",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638314146134660921_278673ec-d941-4bc4-ab79-83f3050efc3c.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "latest",
+      "status": "instock",
+      "brand": "F.P. Journe",
+      "id": 27
+    },
+    {
+      "name": "Ruthenium",
+      "price": "21995",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638277708227300184_jour309813_4469144_72769_40-3.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "upcomming",
+      "status": "instock",
+      "brand": "F.P. Journe",
+      "id": 28
+    },
+    {
+      "name": "Ruthenium",
+      "price": "52995",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638320971466449909_jour311122_4873493_97546_40-57.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "latest",
+      "status": "instock",
+      "brand": "F.P. Journe",
+      "id": 29
+    },
+    {
+      "name": "Classique",
+      "price": "311995",
+      "qty": "1",
+      "image": "https://watchbox-cdn.imgix.net/posted-product-images/638326008787017469_jour313300_4784021_71596_40-1.jpg?w=1134&h=1134&auto=compress,format",
+      "marketstatus": "best",
+      "status": "instock",
+      "brand": "F.P. Journe",
+      "id": 30
     }
   ]
 }

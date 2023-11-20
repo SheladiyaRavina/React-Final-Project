@@ -33,6 +33,7 @@ const AdminProduct = () => {
     }).then((res)=>{
       alert("product sucessfully add..");
       setProductName("");
+      setBrandName("");
       setPrice("");
       setQty("");
       setImage("");

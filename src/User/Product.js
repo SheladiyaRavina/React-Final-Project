@@ -8,8 +8,8 @@ const Product = () => {
   const [allproduct, setAllproduct] = useState([]);
   const [brand, setBrand] = useState([]);
   const [marketstatus, setMarketStatus] = useState([]);
-  // const [search, setSearch] = useState("");
   const [sortData, setSortData] = useState("");
+  const [searchproduct, setSearchProduct] = useState("")
 
   const [currentpage, setCurrentpage] = useState(1);
 
@@ -25,6 +25,15 @@ const Product = () => {
 
   const change = (id) => {
     setCurrentpage(id);
+  }
+
+    const handleSearch = (e) => {
+    const searchTerm = e.target.value;
+    setSearchProduct(searchTerm)
+    const filteredItems = allproduct.filter((user) =>
+      user.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setAllproduct(filteredItems);
   }
 
   // const CategoryPriceData = async (price) => {
@@ -130,7 +139,9 @@ const Product = () => {
       <div className='row'>
         <div className='col-lg-3'>
           {/* search */}
-      
+          <div className='d-flex  justify-content-start'>
+                <input type='text' value={searchproduct} onChange={handleSearch} className='form-control' placeholder='search product' />
+              </div>
 
           {/* price */}
           <h5 className='fw-bold p-2 border-0' style={{ color: '#012970' }}>Price Filter</h5>
@@ -214,16 +225,19 @@ const Product = () => {
             })
           }
 
-        </div>
-        <div className='d-flex justify-content-center align-item-center'>
+          <div className='d-flex justify-content-center align-item-center mb-5'>
           {
             number.map(n => (
-              <div key={n} className={`page-item ${currentpage == n ? 'active' : ''}`}>
-                <a onClick={() => setCurrentpage(n)} className='page-link p-3' href='#'>{n}</a>
+              <div key={n} style={{color:'black'}} className={`page-item ${currentpage == n ? 'active' : ''}`}>
+                <a onClick={() => setCurrentpage(n)} className='page-link p-3'  href='#'>
+                <span style={{backgroundColor:'#dbdada'}} className='p-3 mb-5 rounded-circle border'>{n}</span>
+                </a>
               </div>
             ))
           }
         </div>
+        </div>
+        
       </div>
     </div>
 
